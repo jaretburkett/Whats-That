@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+*{
+  box-sizing: border-box;
+}
+html, body, #root{
+  width:100%;
+  height: 100%;
+  padding:0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(141deg, #f6f7f8 0%, #eae7e5 75%);
+
+}
+.top-sting{
+  margin-top:50px;
+  .title{
+    font-size:40px;
+    text-align:center;
+    color: #4196c0;
+    padding: 10px 0 0;
+  }
+  .powered-by{
+    font-size:10px;
+    color:#bbb;
+    text-transform: uppercase;
+    text-align:center;
+  }
+  .images{
+    text-align:center;
+  }
+  img{
+    width: 250px;
+    max-width: 100%;
+  }
+}
+.webcam-container{
+  width: 600px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+.status{
+  background:#fff;
+  color:#444;
+  text-align:center;
+  padding:20px;
+  width: 600px;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius:5px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+.classes{
+  background: #fff;
+  width: 600px;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius:5px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  padding:20px 0;
+  table{
+    width:100%;
+    .left, .right{
+      width:50%;
+      padding:0 8px;
+    }
+    .left{
+     text-align:right;
+    }
+    .right{
+      text-align:left;
+    }
+  }
+}
