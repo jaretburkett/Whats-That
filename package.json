@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@tensorflow/tfjs": "^0.9.1",
+    "cross-env": "^5.1.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4"
@@ -14,7 +15,7 @@
     "build-css": "node-sass-chokidar --include-path ./src/style --include-path ./node_modules src/style -o src/_build",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/style --include-path ./node_modules src/style -o src/_build --watch --recursive",
     "test": "react-scripts test --env=jsdom",
-    "buildGithubPages":"npm run build-css && react-scripts build && cp -r build docs",
+    "buildGithubPages": "npm run build-css && cross-env PUBLIC_URL='https://jaretburkett.github.io/Whats-That' react-scripts build && cp -r build docs",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
